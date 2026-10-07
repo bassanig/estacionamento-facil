@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Estacionamento - Erro Login</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 24px;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            background: #f6f8f7;
+            color: #1d2722;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+
+            padding: 40px;
+
+            background: #ffffff;
+
+            border: 1px solid #e4e9e6;
+            border-radius: 14px;
+
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+        }
+
+        .error-icon {
+            width: 44px;
+            height: 44px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-bottom: 24px;
+
+            border-radius: 10px;
+
+            background: #fff1f1;
+            color: #c83b3b;
+
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+
+            font-size: 25px;
+            font-weight: 600;
+
+            color: #18211c;
+
+            line-height: 1.25;
+        }
+
+        .message {
+            margin-bottom: 30px;
+
+            font-size: 14px;
+            line-height: 1.6;
+
+            color: #7a857f;
+        }
+
+        .btn-voltar {
+            width: 100%;
+            height: 48px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 8px;
+
+            background: #257a49;
+            color: #ffffff;
+
+            text-decoration: none;
+
+            font-size: 14px;
+            font-weight: 600;
+
+            transition:
+                background 0.2s ease,
+                transform 0.1s ease;
+        }
+
+        .btn-voltar:hover {
+            background: #1f6940;
+        }
+
+        .btn-voltar:active {
+            transform: scale(0.99);
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 16px;
+            }
+
+            .container {
+                padding: 28px 22px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="error-icon">
+        !
+    </div>
+
+    <h1>Não foi possível entrar</h1>
+
+    <p class="message">
+        O e-mail ou a senha informados estão incorretos.
+        Verifique seus dados e tente novamente.
+    </p>
+
+    <a href="/" class="btn-voltar">
+        Voltar ao login
+    </a>
+
+</div>
+
+</body>
+</html>
